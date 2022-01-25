@@ -2,8 +2,10 @@
 
 namespace Micro\Plugin\Uuid;
 
-use Micro\Plugin\Uuid\Business\Uuid\UuidExtractorFactoryInterface;
-use Micro\Plugin\Uuid\Business\Uuid\UuidGeneratorFactoryInterface;
+
+
+use Micro\Plugin\Uuid\Business\UuidExtractorFactoryInterface;
+use Micro\Plugin\Uuid\Business\UuidGeneratorFactoryInterface;
 
 class UuidFacade implements UuidFacadeInterface
 {

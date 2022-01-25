@@ -3,13 +3,14 @@
 namespace Micro\Plugin\Uuid;
 
 
-use Micro\Plugin\Uuid\Business\Uuid\UuidExtractorFactoryInterface;
-use Micro\Plugin\Uuid\Business\Uuid\UuidGeneratorFactoryInterface;
+use Micro\Plugin\Uuid\Business\UuidExtractorFactoryInterface;
+use Micro\Plugin\Uuid\Business\UuidGeneratorFactoryInterface;
 
 class UuidFacadeFactory implements UuidFacadeFactoryInterface
 {
     /**
      * @param UuidGeneratorFactoryInterface $generatorFactory
+     * @param UuidExtractorFactoryInterface $extractorFactory
      */
     public function __construct(
         private UuidGeneratorFactoryInterface $generatorFactory,

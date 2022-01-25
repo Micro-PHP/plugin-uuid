@@ -4,10 +4,10 @@ namespace Micro\Plugin\Uuid;
 
 use Micro\Component\DependencyInjection\Container;
 use Micro\Framework\Kernel\Plugin\AbstractPlugin;
-use Micro\Plugin\Uuid\Business\Uuid\UuidExtractorFactory;
-use Micro\Plugin\Uuid\Business\Uuid\UuidExtractorFactoryInterface;
-use Micro\Plugin\Uuid\Business\Uuid\UuidGeneratorFactory;
-use Micro\Plugin\Uuid\Business\Uuid\UuidGeneratorFactoryInterface;
+use Micro\Plugin\Uuid\Business\UuidExtractorFactory;
+use Micro\Plugin\Uuid\Business\UuidExtractorFactoryInterface;
+use Micro\Plugin\Uuid\Business\UuidGeneratorFactory;
+use Micro\Plugin\Uuid\Business\UuidGeneratorFactoryInterface;
 
 class UuidPlugin extends AbstractPlugin
 {

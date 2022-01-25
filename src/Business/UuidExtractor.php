@@ -1,6 +1,6 @@
 <?php
 
-namespace Micro\Plugin\Uuid\Business\Uuid;
+namespace Micro\Plugin\Uuid\Business;
 
 use Ramsey\Uuid\Uuid;
 
