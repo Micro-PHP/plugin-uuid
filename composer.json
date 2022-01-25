@@ -1,0 +1,22 @@
+{
+    "name": "micro/plugin-uuid",
+    "description": "Micro Framework - plugin for UUID support",
+    "type": "library",
+    "license": "MIT",
+    "version": "0.1",
+    "autoload": {
+        "psr-4": {
+            "Micro\\Plugin\\Uuid\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stanislau.Komar",
+            "email": "stanislau_komar@epam.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "ramsey/uuid": "^4.2"
+    }
+}
