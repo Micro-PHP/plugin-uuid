@@ -4,9 +4,9 @@ namespace Micro\Plugin\Uuid\Business;
 
 interface UuidGeneratorInterface
 {
-    public const NAMESPACE_DNS = 'NAMESPACE_DNS';
-    public const NAMESPACE_URL = 'NAMESPACE_URL';
-    public const NAMESPACE_OID = 'NAMESPACE_OID';
+    public const NAMESPACE_DNS  = 'NAMESPACE_DNS';
+    public const NAMESPACE_URL  = 'NAMESPACE_URL';
+    public const NAMESPACE_OID  = 'NAMESPACE_OID';
     public const NAMESPACE_X500 = 'NAMESPACE_X500';
 
     /**
@@ -41,5 +41,4 @@ interface UuidGeneratorInterface
      * @return string
      */
     public function v5(string $namespace): string;
-
 }
