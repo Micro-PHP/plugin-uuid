@@ -12,8 +12,8 @@ class UuidFacadeFactory implements UuidFacadeFactoryInterface
      * @param UuidExtractorFactoryInterface $extractorFactory
      */
     public function __construct(
-    private UuidGeneratorFactoryInterface $generatorFactory,
-    private UuidExtractorFactoryInterface $extractorFactory
+        private readonly UuidGeneratorFactoryInterface $generatorFactory,
+        private readonly UuidExtractorFactoryInterface $extractorFactory
     )
     {
     }
