@@ -2,8 +2,8 @@
 
 namespace Micro\Plugin\Uuid;
 
-use Micro\Component\DependencyInjection\Container;
-use Micro\Framework\Kernel\Plugin\DependencyProviderInterface;
+use Micro\Framework\DependencyInjection\Container;
+use Micro\Framework\BootDependency\Plugin\DependencyProviderInterface;
 use Micro\Plugin\Uuid\Business\UuidExtractorFactory;
 use Micro\Plugin\Uuid\Business\UuidExtractorFactoryInterface;
 use Micro\Plugin\Uuid\Business\UuidGeneratorFactory;
