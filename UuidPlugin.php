@@ -14,9 +14,6 @@ use Micro\Plugin\Uuid\Business\UuidGeneratorFactoryInterface;
  */
 class UuidPlugin implements DependencyProviderInterface
 {
-    /**
-     * {@inheritDoc}
-     */
     public function provideDependencies(Container $container): void
     {
         $container->register(UuidFacadeInterface::class, function() {
