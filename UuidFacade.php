@@ -5,17 +5,16 @@ namespace Micro\Plugin\Uuid;
 use Micro\Plugin\Uuid\Business\UuidExtractorFactoryInterface;
 use Micro\Plugin\Uuid\Business\UuidGeneratorFactoryInterface;
 
-class UuidFacade implements UuidFacadeInterface
+readonly class UuidFacade implements UuidFacadeInterface
 {
     /**
      * @param UuidGeneratorFactoryInterface $generatorFactory
      * @param UuidExtractorFactoryInterface $extractorFactory
      */
     public function __construct(
-        private readonly UuidGeneratorFactoryInterface $generatorFactory,
-        private readonly UuidExtractorFactoryInterface $extractorFactory
-    )
-    {
+        private UuidGeneratorFactoryInterface $generatorFactory,
+        private UuidExtractorFactoryInterface $extractorFactory
+    ) {
     }
 
     /**
@@ -53,9 +52,9 @@ class UuidFacade implements UuidFacadeInterface
     /**
      * {@inheritDoc}
      */
-    public function fromString(string $source): string
+    public function fromString(string $uuid): string
     {
-        return $this->extractorFactory->create()->fromString($source);
+        return $this->extractorFactory->create()->fromString($uuid);
     }
 
     /**

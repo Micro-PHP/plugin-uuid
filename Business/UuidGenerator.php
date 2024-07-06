@@ -38,9 +38,6 @@ class UuidGenerator implements UuidGeneratorInterface
         return Uuid::uuid5($this->getUuidConstant($namespace), php_uname('n'))->toString();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function v6(): string
     {
         return Uuid::uuid6()->toString();
